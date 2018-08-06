@@ -1,0 +1,174 @@
+
+.timeline {
+  max-width: 1000px;
+  margin: -1em auto 0;
+  padding: 1em;
+  position: relative;
+}
+.timeline #center-line {
+    content: '';
+    width: 2px;
+    height: 90%;
+    margin-left: 1px;
+    border-right: 1.5px solid #005763ad;
+    border-left: 1.5px solid #9fbabd;
+    position: absolute;
+    padding: 0 2px;
+    background: #f4f4f4;
+    background: linear-gradient(to right, #00000000, #04e2ff2b, #c1c1c1, #00363ea1);
+    /* background: linear-gradient(to right, #c4d7e6 0, #c4d7e6 33%, #66a5ad 33%, #66a5ad 66%, #ff0000 66%, #ff0000 100%); */
+    left: 51.8%;
+    top: 1em;
+    box-shadow: 5px 0px 0.9em rgba(0, 0, 0, 0.3);
+}
+ .timeline ul {
+      margin-right: 0%;
+  }
+
+  .timeline ul li {
+  max-width: 40%;
+  background: #fff;
+  color: black;
+  position: relative;
+  margin-bottom: 15%;
+  border-radius: 5px;
+  width: 950px;
+  clear: both;
+  margin-top: -150px;
+  list-style: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.timeline ul li:first-child {
+  margin-top: 20px;
+}
+.timeline ul li:nth-of-type(odd) {
+  float: left;
+}
+.timeline ul li:nth-of-type(odd) h1 {
+  text-align: right;
+}
+.timeline ul li:nth-of-type(odd) .connector {
+  left: 100%;
+}
+.timeline ul li:nth-of-type(odd) .connector .circle {
+  float: right;
+  margin-right: -1em;
+}
+.timeline ul li:nth-of-type(even) {
+  float: right;
+}
+.timeline ul li:nth-of-type(even) h1 {
+  text-align: left;
+}
+.timeline ul li:nth-of-type(even) .connector {
+  left: -25.5%;
+}
+.timeline ul li:nth-of-type(even) .connector .circle {
+  float: left;
+  margin-left: -0.4em;
+}
+.timeline ul li .year {
+  position: absolute;
+  left: -33%;
+  padding: 1em;
+  background: #212121;
+  color: #1abc9c;
+  display: none;
+}
+.timeline ul li img {
+  border-radius: 4px 4px 0 0;
+  margin-bottom: -1px;
+  box-shadow: 0px 0.2ex 0.6em rgba(0, 0, 0, 0.4);
+}
+.timeline ul li .post {
+  margin-top: -2px;
+}
+.timeline ul li .post h1 {
+  text-transform: capitalize;
+  font-size: 1.3em;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 1em;
+  color: #fff;
+  padding: 0.6em;
+  background: #00BCD4;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  box-shadow: 0px 0.2ex 0.6em rgba(0, 0, 0, 0.4);
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+}
+.timeline ul li .post p {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: lighter;
+  padding: 0 1em 1em 1em;
+}
+.timeline ul .connector {
+  position: absolute;
+  width: 25%;
+  height: 1px;
+  border-top: 1px solid #3e3e3e;
+  top: 51%;
+  padding: 2.1.5px 0;
+  border-bottom: 1.5px solid #0094a7;
+  border-top: 1.5px solid #9fbabd1f;
+  background: linear-gradient(to bottom, #00000000, #04e2ff52, #c1c1c1, #0000006b);
+  box-shadow: 0px 5px 0.6em rgba(0, 0, 0, 0.2);
+}
+.timeline ul .connector .circle {
+    border: 2px solid #01a6bb;
+    background: linear-gradient(0deg, rgb(0, 166, 187) 25%, rgba(255,255,255,1) 100%);
+    width: 1em;
+    padding: 3px;
+    height: 1em;
+    border-radius: 50%;
+    margin-top: -0.8em;
+    box-shadow: 0px 5px 0.8em rgba(0, 0, 0, 0.5);
+}
+
+.timeline img {
+  width: 100%;
+  height: auto;
+}
+
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+@media screen and (max-width: 1024px) {
+  .timeline #center-line {
+    left: 1em;
+    border-right: 1.5px solid #0066736e;
+    background: linear-gradient(to right, #00000000, #04e2ff2b, #0040486b, #004d56a1);
+  }
+  .timeline ul{
+    margin-right: 0%;
+    padding: 0;
+  }
+  .timeline ul li {
+    min-width: 95% !important;
+    float: none !important;
+    margin: 1em -35px 2em 3em;
+    width: 100%;
+  }
+  .timeline ul li .connector {
+    left: -3.5em !important;
+    width: 3.4em;
+  }
+  .timeline ul li .connector .circle {
+    float: left !important;
+    margin-top: -0.8em;
+    margin-right: 0;
+    margin-left: -0.6px !important;
+    box-shadow: 0px 5px 0.8em rgba(0, 0, 0, 0.5);
+  }
+  .connector span{
+    margin-left: -25.5px;
+        bottom: 12.1px;
+  }
+}
